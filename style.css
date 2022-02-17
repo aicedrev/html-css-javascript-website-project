@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
 }
 
+/* Navigation Bar */
 .navbar {
   background: #131313;
   height: 80px;
@@ -26,7 +27,7 @@
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 50px;
 }
 
 #navbar__logo {
@@ -112,7 +113,7 @@
     margin: 0;
     width: 100%;
     position: absolute;
-    /* top: -1000px; */
+    top: -1000px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: -1;
@@ -148,7 +149,7 @@
 	 .navbar__links {
 		 text-align: center;
 		 padding: 2rem;
-		 width: 100;
+		 width: 100%;
 		 display: table;
 	 }
    
@@ -171,4 +172,51 @@
 		 right: 5%;
 		 transform: translate(5%, 20%);
 	 }
+
+	 .navbar__toggle .bar {
+		 display: block;
+		 cursor: pointer;
+	 }
+
+	 #mobile-menu.is-active .bar:nth-child(2) {
+		 opacity: 0;
+	 }
+	 
+	 #mobile-menu.is-active .bar:nth-child(1) {
+		 transform: translateY(8px) rotate(45deg);
+	 }
+	 
+	 #mobile-menu.is-active .bar:nth-child(3) {
+		 transform: translateY(-8px) rotate(-45deg);
+	 }
+}
+
+
+/* Hero Section */
+.hero {
+	background: #000000;
+	background: linear-gradient(to right, #161616, #000000);
+	padding: 200px 0;
+}
+
+.hero__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 90%;
+	text-align: center;
+	padding: 30px;
+}
+
+.hero__heading {
+	font-size: 100px;
+	margin-bottom: 24px;
+	color: #fff;
+}
+
+.hero__heading span{
+	
 }
