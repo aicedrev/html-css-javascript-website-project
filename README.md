@@ -1,1 +1,1 @@
-# website-project-2
+HTML CSS Javascript Website Tutorial - Responsive Beginner JS Project with Smooth Scroll
